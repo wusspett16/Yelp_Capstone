@@ -50,7 +50,7 @@ user <- fromJSON(sprintf("[%s]", paste(readLines(yelp_user), collapse=",")))
 ## Exploring the Data
 
 After looking through the files, it became apparent that the "Business" dataset had the information needed to help answer the question.
-```{r}
+```{r, results= 'asis'}
 unique(business$attributes$`Noise Level`)
 ```
 
